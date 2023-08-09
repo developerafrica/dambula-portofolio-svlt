@@ -1,6 +1,7 @@
 /** @type {import('./$types').PageServerLoad} */
 import fs from 'fs'
-import { getDocument } from 'pdfjs-dist'
+import pkg from 'pdfjs-dist';
+const { getDocument } = pkg;
 
 class FileData{
     constructor(title, content, pages, type){

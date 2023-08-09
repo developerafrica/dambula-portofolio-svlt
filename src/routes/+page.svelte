@@ -9,9 +9,7 @@
 
     const {body} = data
     let parsebody = JSON.parse(body) 
-   
     stores.set(parsebody)
-    console.log($stores)
     
 </script>
 <article class="main">
