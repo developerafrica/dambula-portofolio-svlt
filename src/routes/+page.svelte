@@ -1,23 +1,16 @@
 <script>
     import {stores} from "../stores/store.js"
-
-    export let data
     import SectOne from "../components/sectionone.svelte"
     import SectTwo from "../components/sectiontwo.svelte"
     import Contact from "../components/sectioncontact.svelte"
-    
-
-    const {body} = data
-    let parsebody = JSON.parse(body) 
-    stores.set(parsebody)
-    
+        
 </script>
 <article class="main">
     <section class="sectone">
         <SectOne />
     </section>
     <section class="secttwo">
-        <SectTwo data={parsebody}/>
+        <SectTwo data={$stores}/>
     </section>
     <section class="contact">
         <Contact />

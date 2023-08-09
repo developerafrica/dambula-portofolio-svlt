@@ -14,7 +14,7 @@
                         <p>{item.type}</p>
                     </div>
                     <div class="content">
-                        <p>{item.content}</p>
+                        <p>{item.displaycontent} ...</p>
                     </div>
                 </section>
                 <section>
@@ -64,6 +64,8 @@
                             }
                         }
                         .content{
+                            overflow-wrap: break-word;
+                            
                             p{
                                 @include font(var(--black), 12px, 600);
                                 text-transform: uppercase;

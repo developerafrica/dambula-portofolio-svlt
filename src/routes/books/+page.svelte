@@ -23,16 +23,8 @@
                     <div class="type">
                         <p>{item.type}</p>
                     </div>
-                    <div class="content">
-                        <p>{item.content.toString().substring(0, 100)} ...</p>
-                    </div>
-                    <div class="svg">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="50" height="50" rx="25" fill="#1A1A1A"/>
-                            <rect x="20" y="18.1213" width="3" height="12" rx="1.5" transform="rotate(-45 20 18.1213)" fill="#D9D9D9"/>
-                            <rect x="28.4853" y="23" width="3" height="12" rx="1.5" transform="rotate(45 28.4853 23)" fill="#D9D9D9"/>
-                        </svg>                            
-                    </div>
+                    
+                    
                 </section>
             </div>
         </a>
@@ -53,23 +45,26 @@
                     padding: 10px;
                     section:nth-child(1){
                         h1{
-                            @include font(var(--black), 1.4rem, 450);
+                            @include font(var(--black), 1.15rem, 450);
                             text-transform: uppercase;
+                            letter-spacing: 1.2px;
                         }
                     }
                     section:nth-child(2){
                        
                         .image{
-                            width: 150px;
+                            width: 100px;
+                            margin-left: auto;
                             img{
                                 width: 100%;
+                                margin: 10px;
                                 filter: grayscale(100%);
                             }
                         }
                     }
                     section:nth-child(3){
                         .type{
-                            padding: 10px 0;
+                            padding: 5px 0;
                             p{
                                 @include font(var(--black), 11px, 500);
                                 background-color: white;
@@ -79,20 +74,6 @@
                                 padding: 5px 10px;
                                 width: 50px;
                                 margin-left: auto;
-                            }
-                        }
-                        .content{
-                            p{
-                                @include font(var(--black), 12px, 600);
-                                text-transform: uppercase;
-                                padding: 8px 0;
-                                line-height: 1.2rem;
-                                word-spacing: 3px;
-                            }
-                        }
-                        .svg{
-                            svg{
-                                width: 30px;
                             }
                         }
 

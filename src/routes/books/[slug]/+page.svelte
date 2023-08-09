@@ -61,6 +61,7 @@
                 text-transform: capitalize;
                 line-height: 2rem;
                 padding: 20px;
+                overflow-wrap: break-word;
             }
             
         }
