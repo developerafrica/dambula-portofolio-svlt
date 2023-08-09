@@ -1,0 +1,13 @@
+:root{
+    --black: black;
+    --grey: #1A1A1A;
+    --white: white;
+    --nav: rgba(255, 255, 255, 0);
+    --card: -webkit-linear-gradient(315deg, #E7E6FF 25%, white);
+
+}
+@mixin font($c,$s,$w) {
+    font-size: $s;
+    color: $c;
+    font-weight: $w;    
+}
