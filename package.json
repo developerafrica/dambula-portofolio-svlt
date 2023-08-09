@@ -17,7 +17,6 @@
   },
   "type": "module",
   "dependencies": {
-    "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^3.9.179"
   }
 }
